@@ -12,7 +12,9 @@
       <p>{{copy}}</p>
     </md-layout>
     <md-layout>
-      <img src="../assets/images/iphone.png" class="iphone" />
+      <img id="iphone01" src="../assets/images/iphone01.png" class="iphone" />
+      <img id="iphone02" src="../assets/images/iphone02.png" class="iphone" />
+      <img id="iphone03" src="../assets/images/iphone03.png" class="iphone" />
     </md-layout>
   </md-layout>
 
@@ -20,6 +22,21 @@
 </template>
 
 <script>
+import { TweenMax } from 'gsap';
+
+const shuffleiPhone = () => {
+  TweenMax.to('#iphone01', 1, { opacity: 1 });
+  TweenMax.to('#iphone01', 1, { opacity: 0, delay: 2 });
+  TweenMax.to('#iphone02', 1, { opacity: 1, delay: 2 });
+  TweenMax.to('#iphone02', 1, { opacity: 0, delay: 4 });
+  TweenMax.to('#iphone03', 1, { opacity: 1, delay: 4 });
+  TweenMax.to('#iphone03', 1, { opacity: 0, delay: 6, onStart: shuffleiPhone });
+};
+
+window.onload = () => {
+  shuffleiPhone();
+};
+
 export default {
   name: 'description',
   data() {
@@ -85,5 +102,6 @@ export default {
   .iphone {
     position: absolute;
     height: auto;
+    opacity: 0;
   }
 </style>

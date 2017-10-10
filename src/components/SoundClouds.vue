@@ -167,6 +167,7 @@
     border-radius: 100px;
     width: 130px;
     height: 130px;
+    margin-right: 55px;
   }
 
   .img-container {
