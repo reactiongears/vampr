@@ -33,9 +33,9 @@ const shuffleiPhone = () => {
   TweenMax.to('#iphone03', 1, { opacity: 0, delay: 6, onStart: shuffleiPhone });
 };
 
-window.onload = () => {
+window.addEventListener('load', () => {
   shuffleiPhone();
-};
+});
 
 export default {
   name: 'description',

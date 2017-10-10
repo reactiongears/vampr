@@ -55,9 +55,9 @@ const countUp = () => {
   TweenMax.to(totals, 1, { total02: `+=${count}`, delay: 0.5, onComplete: countUp });
 };
 
-window.onload = () => {
+window.addEventListener('load', () => {
   countUp();
-};
+});
 
 export default {
   name: 'counters',
