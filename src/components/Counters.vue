@@ -3,7 +3,7 @@
 
       <md-layout md-flex-small="100" md-flex="30" md-align="center">
         <div class="featurette">
-          <h1>{{counterOne.total}}</h1>
+          <h1>{{parseInt(totals.total01).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}}</h1>
           <p>{{counterOne.label}}</p>
         </div>
       </md-layout>
@@ -18,7 +18,7 @@
 
       <md-layout md-flex-small="100" md-flex="30" md-align="center">
         <div class="featurette">
-          <h1>{{counterTwo.total}}</h1>
+          <h1>{{parseInt(totals.total02).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}}</h1>
           <p>{{counterTwo.label}}</p>
         </div>
       </md-layout>
@@ -33,7 +33,7 @@
 
       <md-layout md-flex-small="100" md-flex="30" md-align="center">
         <div class="featurette">
-          <h1>{{counterThree.total}}</h1>
+          <h1>{{parseInt(totals.total03)}}</h1>
           <p>{{counterThree.label}}</p>
         </div>
       </md-layout>
@@ -41,21 +41,40 @@
 </template>
 
 <script>
+import { TweenMax } from 'gsap';
+
+const totals = {
+  total01: 2248223,
+  total02: 456584,
+  total03: 166,
+};
+
+const countUp = () => {
+  const count = parseInt(Math.random() * 8, 0);
+  TweenMax.to(totals, 1, { total01: `+=${count}` });
+  TweenMax.to(totals, 1, { total02: `+=${count}`, delay: 0.5, onComplete: countUp });
+};
+
+window.onload = () => {
+  countUp();
+};
+
 export default {
   name: 'counters',
   data() {
     return {
+      totals,
       counterOne: {
         label: 'Swipes on Vampr',
-        total: '2,248,223',
+        total: totals.total01,
       },
       counterTwo: {
         label: 'Connections made',
-        total: '456,584',
+        total: totals.total02,
       },
       counterThree: {
         label: 'Countries worldwide',
-        total: '166',
+        total: totals.total03,
       },
     };
   },
