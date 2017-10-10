@@ -83,7 +83,7 @@ export default {
     }
 
     .featured-artist-img {
-      width: 100px;
+      width: 200px;
     }
 
     p {

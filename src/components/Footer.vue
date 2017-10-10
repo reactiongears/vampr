@@ -99,7 +99,7 @@ export default {
 
   .legal-copy {
     font-size: 12px;
-  	line-height: 1.5;
+  	line-height: 2.5;
     color: #567483;
   }
 

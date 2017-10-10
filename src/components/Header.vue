@@ -108,7 +108,7 @@ export default {
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 961px) {
     .header-content {
-      padding: 70px;
+      padding: 100px;
     }
 
     .hero-text {
@@ -157,7 +157,7 @@ export default {
   .logo {
     height: 150px;
   }
-  
+
   @font-face {
     font-family: 'DinCond';
     src: url('../assets/fonts/DINWeb-CondBold.eot'); /* IE9 Compat Modes */

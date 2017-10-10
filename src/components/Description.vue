@@ -59,13 +59,13 @@ export default {
 
     p {
       font-size: 20px;
-    	font-weight: bold;
+    	font-weight: 700;
     	line-height: 1.19;
     }
 
     .iphone {
-      top: 420px;
-      right: 60px;
+      top: 400px;
+      right: 100px;
     }
   }
 
@@ -74,6 +74,7 @@ export default {
     font-size: 30px;
   	font-weight: bold;
   	line-height: 1.0;
+    margin-left: -10px;
   }
 
   .description {

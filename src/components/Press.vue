@@ -75,6 +75,7 @@ export default {
     .press-brand {
       fill: #567483;
       margin: 20px;
+      opacity: 0.5;
     }
   }
 
@@ -87,7 +88,8 @@ export default {
 
     .press-brand {
       fill: #567483;
-      padding-right: 15px;
+      padding-right: 45px;
+      opacity: 0.5;
     }
   }
 
