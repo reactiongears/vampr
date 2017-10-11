@@ -15,7 +15,7 @@
         </a>
     </md-layout>
 
-      <md-layout md-flex-small="100" md-flex="70" md-align="start">
+      <md-layout md-flex-small="100" md-flex="70" md-align-small="center" md-align="start">
         <div class="legal-copy">
           {{legal}}
             &nbsp;|&nbsp;
@@ -76,7 +76,7 @@ export default {
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 961px) {
     .footer {
-      padding: 35px 70px 35px;
+      padding: 35px 100px 35px;
     }
 
     .legal-copy {

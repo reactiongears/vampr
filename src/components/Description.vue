@@ -1,6 +1,6 @@
 <template>
   <div class="description">
-  <md-layout md-hide-medium-and-up md-gutter="16">
+  <md-layout md-hide-medium-and-up md-gutter="32">
     <h1>{{header}}</h1>
   </md-layout>
 
@@ -26,11 +26,11 @@ import { TweenMax } from 'gsap';
 
 const shuffleiPhone = () => {
   TweenMax.to('#iphone01', 1, { opacity: 1 });
-  TweenMax.to('#iphone01', 1, { opacity: 0, delay: 2 });
-  TweenMax.to('#iphone02', 1, { opacity: 1, delay: 2 });
-  TweenMax.to('#iphone02', 1, { opacity: 0, delay: 4 });
-  TweenMax.to('#iphone03', 1, { opacity: 1, delay: 4 });
-  TweenMax.to('#iphone03', 1, { opacity: 0, delay: 6, onStart: shuffleiPhone });
+  TweenMax.to('#iphone01', 1, { opacity: 0, delay: 3 });
+  TweenMax.to('#iphone02', 1, { opacity: 1, delay: 3 });
+  TweenMax.to('#iphone02', 1, { opacity: 0, delay: 6 });
+  TweenMax.to('#iphone03', 1, { opacity: 1, delay: 6 });
+  TweenMax.to('#iphone03', 1, { opacity: 0, delay: 9, onStart: shuffleiPhone });
 };
 
 window.addEventListener('load', () => {
@@ -71,7 +71,7 @@ export default {
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 961px) {
     .description {
-      padding: 35px 70px 25px;
+      padding: 35px 100px 25px;
     }
 
     p {
@@ -81,7 +81,7 @@ export default {
     }
 
     .iphone {
-      top: 400px;
+      top: 490px;
       right: 100px;
     }
   }
@@ -103,5 +103,6 @@ export default {
     position: absolute;
     height: auto;
     opacity: 0;
+    z-index: 100;
   }
 </style>

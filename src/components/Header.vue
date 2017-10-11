@@ -3,8 +3,6 @@
       <div class="header-content">
         <md-layout class="nav-bar" md-align-small="center" md-vertical-align="start">
           <md-layout md-flex-small="100" md-align-small="center" md-align="start" md-flex="45" md-gutter="16" md-vertical-align="start">
-            <a href="http://www.vampr.me" class="nav-item" target="_blank">Home</a>
-
             <a href="http://blog.vampr.me" class="nav-item" target="_blank">Blog</a>
 
             <a href="http://press.vampr.me" class="nav-item" target="_blank">Press</a>
@@ -19,7 +17,12 @@
           <md-layout md-flex="33" md-align="end" md-vertical-align="start" md-hide-small>
 
               <a href="http://www.facebook.com/vamprapp" target="_blank">
-                <img src="../assets/icons/social/teal/facebook-teal.svg" class="social-item" alt="">
+                <img
+                  src="../assets/icons/social/teal/facebook-teal.svg"
+                  onmouseover="this.src='../assets/icons/social/white/facebook-white.svg'"
+                  onmouseout="this.src='../assets/icons/social/teal/facebook-teal.svg'"
+                  class="social-item"
+                  alt="">
               </a>
 
               <a href="http://www.twitter.com/vamprapp" target="_blank">
@@ -127,6 +130,7 @@ export default {
 
   a:hover {
     text-decoration: none !important;
+    color: #fff !important;
   }
 
   .download-app {

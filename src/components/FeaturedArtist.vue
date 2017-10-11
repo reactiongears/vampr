@@ -11,24 +11,24 @@
 
       <md-layout md-flex-small="40" md-flex="15">
         <div>
-          <img src="../assets/images/artist-cover.png" class="featured-artist-img" alt="">
+          <img src="../assets/images/artist-cover-alex-ava.png" class="featured-artist-img" alt="">
         </div>
       </md-layout>
 
       <md-layout md-flex-small="60" md-flex="25">
         <h2>{{artist}}</h2>
         <p>{{copy}}</p>
-        <a class="cta" href="#">{{cta}}</a>
+        <a class="cta" :href="href">{{cta}}</a>
       </md-layout>
 
       <md-layout md-flex="60" md-hide-small>
-        <iframe class="video" src="https://www.youtube.com/embed/0h1xPhZn4YY" frameborder="0" allowfullscreen=""></iframe>
+        <iframe class="video" :src="src" frameborder="0" allowfullscreen=""></iframe>
       </md-layout>
 
     </md-layout>
 
-    <md-layout md-flex md-hide-medium-and-up>
-      <iframe class="video" src="https://www.youtube.com/embed/0h1xPhZn4YY" frameborder="0" allowfullscreen=""></iframe>
+    <md-layout md-flex md-hide-medium-and-up md-align="center" class="center">
+      <iframe class="video" :src="src" frameborder="0" allowfullscreen=""></iframe>
     </md-layout>
   </div>
 </template>
@@ -39,9 +39,11 @@ export default {
   data() {
     return {
       header: 'Vampr featured artist',
-      artist: 'Carpool Tunnel',
-      copy: 'Formed in June 2017, this indie rock band from San Jose dropped their first single "Afterlight" just two weeks after finding each other on Vampr!',
-      cta: 'Connect with them on Vampr',
+      artist: 'ALEX AVA',
+      copy: 'After years of struggling to find her creative voice, Scotland’s Alex AVA used Vampr to connect with Orlando producer, Vncnzo. Together they are now gearing up to release an entire EP!',
+      cta: 'Connect with her on Vampr',
+      href: 'https://id.vampr.me/s/be865e2a-cd58-4141-bb11-8f2d6024a264',
+      src: 'https://www.youtube.com/embed/TZ9rHVDBqbg',
     };
   },
 };
@@ -58,7 +60,6 @@ export default {
 
     .video {
       margin-top: 30px;
-      height: 200px;
     }
 
     .featured-artist-img {
@@ -74,12 +75,8 @@ export default {
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 961px) {
     .featured-artist {
-      padding: 35px 70px 45px;
+      padding: 35px 100px 45px;
       min-height:400px;
-    }
-
-    .video {
-      height: 315px;
     }
 
     .featured-artist-img {
@@ -143,7 +140,7 @@ export default {
   }
 
   .video {
-    width: 100%;
+    height: 280px;
+    width: 500px;
   }
-
 </style>

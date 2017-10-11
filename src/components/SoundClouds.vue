@@ -159,7 +159,7 @@
   }
 
   .sound-clouds {
-    padding: 35px 00px 45px;
+    padding: 35px 100px 45px;
     min-height:400px;
   }
 

@@ -64,7 +64,7 @@ export default {
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 961px) {
     .features {
-      padding: 35px 70px 25px;
+      padding: 35px 100px 25px;
     }
 
     .featurette {

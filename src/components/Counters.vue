@@ -111,7 +111,7 @@ export default {
   }
 
   .counters {
-    padding: 35px 70px 35px;
+    padding: 35px 100px 35px;
     background-color: #eef1f2;
     color: #fff;
   }
