@@ -54,7 +54,7 @@ export default {
   /* Mobile Styles ------------------ */
   @media only screen and (max-width : 960px) {
     .description {
-      padding: 15px 30px 25px;
+      padding: 15px 30px 55px;
     }
 
     p {

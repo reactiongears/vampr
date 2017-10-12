@@ -54,7 +54,7 @@ export default {
   /* Mobile Styles ------------------ */
   @media only screen and (max-width : 960px) {
     .featured-artist {
-      padding: 15px 15px 45px;
+      padding: 35px 15px 45px;
       min-height:400px;
     }
 

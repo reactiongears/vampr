@@ -78,6 +78,7 @@ export default {
 
   p {
     text-align: center;
+    color:#567483;
   }
 
   .features {

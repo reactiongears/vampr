@@ -150,7 +150,7 @@
   }
 
   .sound-clouds {
-    padding: 35px 0 45px;
+    padding: 55px 0 45px;
   }
 
   .album-art {
