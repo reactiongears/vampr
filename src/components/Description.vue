@@ -12,6 +12,7 @@
       <p>{{copy}}</p>
     </md-layout>
     <md-layout>
+      <img id="iphone" src="../assets/images/iphone.png" class="iphoneBase" />
       <img id="iphone01" src="../assets/images/iphone01.png" class="iphone" />
       <img id="iphone02" src="../assets/images/iphone02.png" class="iphone" />
       <img id="iphone03" src="../assets/images/iphone03.png" class="iphone" />
@@ -58,11 +59,13 @@ export default {
 
     p {
       font-size: 18px;
+      font-weight: 400;
     	line-height: 1.19;
     }
 
+    .iphoneBase,
     .iphone {
-      top: 560px;
+      top: 540px;
       right: 10px;
       width: 150px;
     }
@@ -76,10 +79,11 @@ export default {
 
     p {
       font-size: 20px;
-    	font-weight: 700;
+    	font-weight: 400;
     	line-height: 1.19;
     }
 
+    .iphoneBase,
     .iphone {
       top: 490px;
       right: 100px;
@@ -103,6 +107,12 @@ export default {
     position: absolute;
     height: auto;
     opacity: 0;
+    z-index: 100;
+  }
+
+  .iphoneBase {
+    position: absolute;
+    height: auto;
     z-index: 100;
   }
 </style>

@@ -3,25 +3,25 @@
 
     <md-layout md-hide-medium-and-up md-flex="100" md-align="center">
         <a href="http://www.facebook.com/vamprapp" target="_blank">
-          <img src="../assets/icons/social/teal/facebook-teal.svg" class="social-item" alt="">
+          <div class="social-item social-fb" />
         </a>
 
         <a href="http://www.twitter.com/vamprapp" target="_blank">
-          <img src="../assets/icons/social/teal/twitter-teal.svg" class="social-item" alt="">
+          <div class="social-item social-twitter" />
         </a>
 
         <a href="http://www.instagram.com/vamprapp" target="_blank">
-          <img src="../assets/icons/social/teal/instagram-teal.svg" class="social-item" alt="">
+          <div class="social-item social-ig" />
         </a>
     </md-layout>
 
-      <md-layout md-flex-small="100" md-flex="70" md-align-small="center" md-align="start">
+      <md-layout md-flex-small="100" md-flex="70" md-align="start">
         <div class="legal-copy">
           {{legal}}
             &nbsp;|&nbsp;
-            <a href="#terms">Terms &amp; Conditions</a>
+            <a href="http://vampr.me/TermsConditions.html">Terms &amp; Conditions</a>
             &nbsp;|&nbsp;
-            <a href="#privacy">Privacy</a>
+            <a href="http://vampr.me/PrivacyPolicy.html">Privacy</a>
             &nbsp;|&nbsp;
             <a href="http://blog.vampr.me" class="nav-item" target="_blank">  Blog</a>
             &nbsp;|&nbsp;
@@ -34,15 +34,15 @@
     <md-layout md-hide-small md-flex="30" md-align="end" md-vertical-align="start">
 
         <a href="http://www.facebook.com/vamprapp" target="_blank">
-          <img src="../assets/icons/social/grey/facebook-faded-grey.svg" class="social-item" alt="">
+          <div class="social-item social-fb" />
         </a>
 
         <a href="http://www.twitter.com/vamprapp" target="_blank">
-          <img src="../assets/icons/social/grey/twitter-faded-grey.svg" class="social-item" alt="">
+          <div class="social-item social-twitter" />
         </a>
 
         <a href="http://www.instagram.com/vamprapp" target="_blank">
-          <img src="../assets/icons/social/grey/instagram-faded-grey.svg" class="social-item" alt="">
+          <div class="social-item social-ig" />
         </a>
 
     </md-layout>
@@ -70,6 +70,7 @@ export default {
 
     .legal-copy {
       margin: 20px 0 0;
+      text-align: center;
     }
   }
 
@@ -89,6 +90,7 @@ export default {
   }
 
   a:hover {
+    color: #404040 !important;
     text-decoration: none !important;
   }
 
@@ -105,6 +107,31 @@ export default {
 
   .social-item {
     width:35px;
+    height:35px;
     margin-left: 20px;
+  }
+
+  .social-ig {
+    background-image: url("../assets/icons/social/grey/instagram-faded-grey.svg");
+  }
+
+  .social-ig:hover {
+    background-image: url("../assets/icons/social/dark/instagram-dark-grey.svg");
+  }
+
+  .social-twitter {
+    background-image: url("../assets/icons/social/grey/twitter-faded-grey.svg");
+  }
+
+  .social-twitter:hover {
+    background-image: url("../assets/icons/social/dark/twitter-dark-grey.svg");
+  }
+
+  .social-fb {
+    background-image: url("../assets/icons/social/grey/facebook-faded-grey.svg");
+  }
+
+  .social-fb:hover {
+    background-image: url("../assets/icons/social/dark/facebook-dark-grey.svg");
   }
 </style>

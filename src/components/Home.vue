@@ -7,7 +7,7 @@
     <FeaturedArtist />
     <SoundClouds />
     <Counters />
-    <Footer />
+    <PageFooter />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import Features from '@/components/Features';
 import FeaturedArtist from '@/components/FeaturedArtist';
 import SoundClouds from '@/components/SoundClouds';
 import Counters from '@/components/Counters';
-import Footer from '@/components/Footer';
+import PageFooter from '@/components/Footer';
 
 export default {
   name: 'home',
@@ -31,7 +31,7 @@ export default {
     FeaturedArtist,
     SoundClouds,
     Counters,
-    Footer,
+    PageFooter,
   },
   data() {
     return {

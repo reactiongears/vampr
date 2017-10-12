@@ -7,7 +7,7 @@
     </md-layout>
 
 
-    <md-layout md-gutter="16" md-vertical-align="center">
+    <md-layout md-gutter="16" md-vertical-align="center" md-align="center">
 
       <md-layout md-flex-small="40" md-flex="15">
         <div>
@@ -21,7 +21,7 @@
         <a class="cta" :href="href">{{cta}}</a>
       </md-layout>
 
-      <md-layout md-flex="60" md-hide-small>
+      <md-layout md-flex="45" md-hide-small>
         <iframe class="video" :src="src" frameborder="0" allowfullscreen=""></iframe>
       </md-layout>
 

@@ -17,20 +17,15 @@
           <md-layout md-flex="33" md-align="end" md-vertical-align="start" md-hide-small>
 
               <a href="http://www.facebook.com/vamprapp" target="_blank">
-                <img
-                  src="../assets/icons/social/teal/facebook-teal.svg"
-                  onmouseover="this.src='../assets/icons/social/white/facebook-white.svg'"
-                  onmouseout="this.src='../assets/icons/social/teal/facebook-teal.svg'"
-                  class="social-item"
-                  alt="">
+                <div class="social-item social-fb" />
               </a>
 
               <a href="http://www.twitter.com/vamprapp" target="_blank">
-                <img src="../assets/icons/social/teal/twitter-teal.svg" class="social-item" alt="">
+                <div class="social-item social-twitter" />
               </a>
 
               <a href="http://www.instagram.com/vamprapp" target="_blank">
-                <img src="../assets/icons/social/teal/instagram-teal.svg" class="social-item" alt="">
+                <div class="social-item social-ig" />
               </a>
 
           </md-layout>
@@ -101,10 +96,11 @@ export default {
     .hero-text {
       font-family: 'DinCond';
       font-size: 26px;
+      line-height: 0.18;
     }
 
     .download-app {
-      width: 100px;
+      width: 140px;
     }
   }
 
@@ -148,7 +144,33 @@ export default {
 
   .social-item {
     width:35px;
+    height:35px;
     margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .social-ig {
+    background-image: url("../assets/icons/social/teal/instagram-teal.svg");
+  }
+
+  .social-ig:hover {
+    background-image: url("../assets/icons/social/white/instagram-white.svg");
+  }
+
+  .social-twitter {
+    background-image: url("../assets/icons/social/teal/twitter-teal.svg");
+  }
+
+  .social-twitter:hover {
+    background-image: url("../assets/icons/social/white/twitter-white.svg");
+  }
+
+  .social-fb {
+    background-image: url("../assets/icons/social/teal/facebook-teal.svg");
+  }
+
+  .social-fb:hover {
+    background-image: url("../assets/icons/social/white/facebook-white.svg");
   }
 
   .nav-item {

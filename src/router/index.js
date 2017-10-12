@@ -11,10 +11,5 @@ export default new Router({
       name: 'Home',
       component: Home,
     },
-    {
-      path: '/vampr',
-      name: 'Home',
-      component: Home,
-    },
   ],
 });

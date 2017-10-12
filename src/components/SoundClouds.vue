@@ -32,10 +32,6 @@
           <img class="scroll-arrow" src="../assets/icons/left-arrow.svg" alt="Left" />
         </button>
 
-        <div>
-          <img class="dots" src="../assets/images/dots.png"/>
-        </div>
-
         <button v-on:click="scrollRight()">
           <img class="scroll-arrow" src="../assets/icons/right-arrow.svg" alt="Right" />
         </button>
@@ -48,7 +44,6 @@
 
 <script>
   import { TweenMax } from 'gsap';
-  import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
   const SC = require('soundcloud');
 
@@ -94,16 +89,12 @@
     });
   });
 
-  let scrollVal = 0;
-
   const scrollLeft = () => {
-    scrollVal -= 200;
-    TweenMax.to('#sctracks', 1, { scrollTo: { x: scrollVal } });
+    TweenMax.to('#sctracks', 1, { scrollLeft: '-=500' });
   };
 
   const scrollRight = () => {
-    scrollVal += 200;
-    TweenMax.to('#sctracks', 1, { scrollTo: { x: scrollVal } });
+    TweenMax.to('#sctracks', 1, { scrollLeft: '+=500' });
   };
 
 
@@ -159,8 +150,7 @@
   }
 
   .sound-clouds {
-    padding: 35px 100px 45px;
-    min-height:400px;
+    padding: 35px 0 45px;
   }
 
   .album-art {
@@ -201,7 +191,7 @@
   }
 
   .scroll-arrow {
-    margin: 0px 15px;
+    margin: 0px 45px;
     padding-top: 8px;
     width: 18px;
     height: auto;
