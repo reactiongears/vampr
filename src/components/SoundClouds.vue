@@ -118,6 +118,7 @@
   h1 {
     text-align: center;
     margin:0 0 30px;
+    padding: 0 30px;
     font-size: 30px;
   	font-weight: bold;
   	line-height: 1.0;
