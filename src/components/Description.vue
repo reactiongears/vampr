@@ -65,9 +65,9 @@ export default {
 
     .iphoneBase,
     .iphone {
-      top: 540px;
-      right: 10px;
-      width: 150px;
+      top: 552px;
+      right: 20px;
+      width: 130px;
     }
   }
 
